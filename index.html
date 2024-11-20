@@ -155,7 +155,7 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Concept -->
 <section class="hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -175,9 +175,29 @@
     </div>
   </div>
 </section>
-<!-- End image carousel -->
+<!-- End Concept -->
 
 
+
+<!-- Noise Computation -->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantifying Memorization Strength</h2>
+        <div class="content has-text-justified">
+           <img src="static/images/noise_computation.png" alt="Computation of our metric for quantifying memorization strength" style="width:100%;" class="center"/>
+          <p>
+            NeMo computes the memorization strength by analyzing the consistency of the denoising trajectory. 
+            Starting with two randomly initialized noise images, we perform a single denoising step and calculate the difference (𝛿) between the predicted and initial noise. 
+            The Structural Similarity Index (SSIM) between these differences quantifies memorization, with higher similarity indicating stronger memorization. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Noise Computation -->
 
 
 <!-- Youtube video -->
