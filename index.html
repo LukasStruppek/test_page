@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models</title>
+  <title>Finding NeMo</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Finding NeMo: Localizing Neurons Responsible For Memorization in Diffusion Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -75,7 +75,7 @@
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
-             <img src="static/images/NeurIPS-logo.svg" alt="NeurIPS" style="height:15%;" />
+             <img src="static/images/NeurIPS-logo.svg" alt="NeurIPS" style="width:30%;"/>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -157,40 +157,25 @@
 
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview of NeMo</h2>
+        <div class="content has-text-justified">
+          <p>
+            For memorized prompts, we observe that the same (original training)
+            image is constantly generated independently of the initial random seed. This yields severe privacy
+            and copyright concerns. In the initial stage, NeMo first identifies candidate neurons potentially
+            responsible for the memorization based on out-of-distribution activations. In a refinement step,
+            NeMo detects the memorization neurons from the candidate set by leveraging the noise similarities
+            during the first denoising step. Deactivating memorization neurons prevents unintended memorization
+            behavior and induces diversity in the generated images. <br>
+          </p>
+          <img src="static/images/concept.png" alt="Overview of NeMo" style="width:60%;"/>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
