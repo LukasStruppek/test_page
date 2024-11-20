@@ -162,16 +162,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview of NeMo</h2>
         <div class="content has-text-justified">
+           <img src="static/images/concept.png" alt="Overview of NeMo" style="width:60%;" class="center"/>
           <p>
             For memorized prompts, we observe that the same (original training)
-            image is constantly generated independently of the initial random seed. This yields severe privacy
-            and copyright concerns. In the initial stage, NeMo first identifies candidate neurons potentially
+            image is constantly generated independently of the initial random seed. In the initial stage, NeMo first identifies candidate neurons potentially
             responsible for the memorization based on out-of-distribution activations. In a refinement step,
             NeMo detects the memorization neurons from the candidate set by leveraging the noise similarities
-            during the first denoising step. Deactivating memorization neurons prevents unintended memorization
-            behavior and induces diversity in the generated images. <br>
+            during the first denoising step. <br>
           </p>
-          <img src="static/images/concept.png" alt="Overview of NeMo" style="width:60%;" class="center"/>
         </div>
       </div>
     </div>
