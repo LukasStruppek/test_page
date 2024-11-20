@@ -212,7 +212,7 @@
           <p>
             We visualize the normalized noise differences between the predicted noise (after the first denoising step) and the initial Gaussian noise, using four random seeds. 
             The top row shows the final generated images. For memorized prompts (left), noise differences reveal low diversity and hint at the final image's structure, while for non-memorized prompts (right), 
-            the noise differences lack clear structure and vary significantly across initial noise samples <br>
+            the noise differences lack clear structure and vary significantly across initial noise samples. <br>
           </p>
         </div>
       </div>
@@ -222,38 +222,27 @@
 <!-- Noise Computation -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+<!-- Visual Results -->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Impact of Deactivating Memorization Neurons</h2>
+        <div class="content has-text-justified">
+           <img src="static/images/image_samples.png" alt="Noise difference for memorized prompts" style="width:100%;" class="center"/>
+           <img src="static/images/image_samples_tm.png" alt="Noise difference for non-memorized prompts" style="width:100%;" class="center"/>
+          <p>
+            The top rows display images generated with verbatim memorized (first figure) and template memorized (second figure) prompts, closely replicating training data. 
+            In contrast, the bottom row shows that deactivating specific memorization neurons enhances diversity and mitigates memorization. 
+            Remarkably, only a small number of neurons are responsible for triggering memorization, as indicated by the counts in the boxes. <br>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- Visual Results -->
+
 
 
 <!--BibTex citation -->
