@@ -128,8 +128,8 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <b>TL;DR:</b> Diffusion models can memorize and reproduce sensitive or copyrighted training data, raising privacy and intellectual property concerns. 
-            NeMo addresses this by localizing and deactivating specific neurons responsible for memorization, preventing data replication, enhancing output diversity, and promoting responsible diffusion model deployment.
+        <b>TL;DR:</b> Text-to-image diffusion models can memorize and reproduce sensitive or copyrighted training data, raising privacy and intellectual property concerns. 
+            NeMo addresses this by localizing and deactivating specific neurons responsible for memorization, thereby preventing data replication, enhancing output diversity, and promoting responsible diffusion model deployment.
       </h2>
     </div>
   </div>
@@ -188,7 +188,7 @@
            <img src="static/images/noise_computation.png" alt="Computation of our metric for quantifying memorization strength" style="width:100%;" class="center"/>
           <p>
             NeMo computes the memorization strength by analyzing the consistency of the denoising trajectory. 
-            Starting with two randomly initialized noise images, we perform a single denoising step and calculate the difference (𝛿) between the predicted and initial noise. 
+            Starting with two randomly initialized noise images, we perform a single denoising step and calculate the difference between the predicted and initial noise. 
             The Structural Similarity Index (SSIM) between these differences quantifies memorization, with higher similarity indicating stronger memorization. <br>
           </p>
         </div>
@@ -206,7 +206,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Visualizing Noise Differences</h2>
         <div class="content has-text-justified">
-           <img src="static/images/noise_memorized.png" alt="Noise difference for memorized prompts" style="width:51.20402%;" class="center"/>
+           <figure><img src="static/images/noise_memorized.png" alt="Noise difference for memorized prompts" style="width:51.20402%;" class="center"/><figcaption>Memorized Prompts</figcaption></figure>
            <img src="static/images/noise_unmemorized.png" alt="Noise difference for non-memorized prompts" style="width:46.79402%;" class="center"/>
           <p>
             We visualize the normalized noise differences between the predicted noise (after the first denoising step) and the initial Gaussian noise, using four random seeds. 
