@@ -156,6 +156,7 @@
         <div class="content has-text-justified">
            <img src="static/images/concept.png" alt="Overview of NeMo" style="width:100%;" class="center"/>
           <p>
+            <br>
             For memorized prompts, we observe that the same (original training)
             image is constantly generated independently of the initial random seed. In the initial stage, NeMo first identifies candidate neurons potentially
             responsible for the memorization based on out-of-distribution activations. In a refinement step,
@@ -180,6 +181,7 @@
         <div class="content has-text-justified">
            <img src="static/images/noise_computation.png" alt="Computation of our metric for quantifying memorization strength" style="width:100%;" class="center"/>
           <p>
+            <br>
             NeMo computes the memorization strength by analyzing the consistency of the denoising trajectory. 
             Starting with two randomly initialized noise images, we perform a single denoising step and calculate the difference between the predicted and initial noise. 
             The Structural Similarity Index (SSIM) between these differences quantifies memorization, with higher similarity indicating stronger memorization. <br>
